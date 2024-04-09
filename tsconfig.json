@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"target": "es5",
+		"target": "es2015",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
 		"skipLibCheck": true,
@@ -18,7 +18,13 @@
 		"noImplicitAny": true,
 		"noImplicitReturns": true,
 		"paths": {
-			"@*": ["./src/*"],
+			"@app/*": ["./src/app/*"],
+			"@entities/*": ["./src/entities/*"],
+			"@features/*": ["./src/features/*"],
+			"@pages/*": ["./src/pages/*"],
+			"@shared/*": ["./src/shared/*"],
+			"@widgets/*": ["./src/widgets/*"],
+			"@*": ["./src/*"]
 		}
 	},
 	"include": ["src"],
