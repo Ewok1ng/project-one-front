@@ -5,6 +5,5 @@ export type Styles = {
 export type ClassNames = keyof Styles;
 
 declare const styles: Styles;
-conststyles;
 
 export default styles;
