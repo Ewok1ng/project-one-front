@@ -18,7 +18,7 @@ jobs:
         needs: [lint]
         strategy:
             matrix:
-                node-version: [18]
+                node-version: [20]
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
@@ -26,7 +26,7 @@ jobs:
             - name: Starting Node.js ${{ matrix.node-version }}
               uses: actions/setup-node@v3
               with:
-                  node-version: #{{ matrix.node-version }}
+                  node-version: ${{ matrix.node-version }}
             - name: Install deps
               run: yarn install --frozen-lockfile
             - name: Test
